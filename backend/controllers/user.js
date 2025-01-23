@@ -11,7 +11,7 @@ const register = async (req, res) => {
     width: 138,
     crop: "scale",
   });
-
+s
   const { name, email, password } = req.body;
 
   const user = await User.findOne({ email });
