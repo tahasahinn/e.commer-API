@@ -9,7 +9,7 @@ const authenticationMid = async (req, res, next) => {
       .status(500)
       .json({ message: "Erişim için lütfen login olunuz !!" });
   }
-
+s
   const decodedData = jwt.verify(token, "SECRETTOKEN");
 
   if (!decodedData) {
