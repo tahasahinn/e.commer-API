@@ -8,7 +8,7 @@ const allProducts = async (req, res) => {
     .filter()
     .pagination(resultPerPage);
   const products = await productFilter.query;
-
+s
   res.status(200).json({ products });
 };
 
