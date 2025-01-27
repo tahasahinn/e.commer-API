@@ -119,7 +119,7 @@ const forgetPassword = async (req, res) => {
       from: "youremail@gmail.com",
       to: req.body.email,
       subject: "Şifre Sıfırlama ",
-      text: message,
+      text:s message,
     };
     await transporter.sendMail(mailData);
     res.status(200).json({ message: "Mailinizi kontrol ediniz !!" });
