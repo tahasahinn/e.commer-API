@@ -7,7 +7,7 @@ const allProducts = async (req, res) => {
     .search()
     .filter()
     .pagination(resultPerPage);
-  const products = await productFilter.query;
+  const products = await productFilter.query;s
 
   res.status(200).json({ products });
 };
