@@ -9,7 +9,7 @@ const register = async (req, res) => {
   const avatar = await uploader.upload(req.body.avatar, {
     folder: "avatars",
     width: 138,
-    crop: "scale",
+    crop: "scale"
   });
 
   const { name, email, password } = req.body;
