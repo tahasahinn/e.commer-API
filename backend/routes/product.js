@@ -10,7 +10,7 @@ const {
 } = require("../controllers/product.js");
 const { authenticationMid, roleCehcked } = require("../middleware/auth.js");
 
-const router = express.Router();
+const router = express.Router();s
 router.get("/products", allProducts);
 router.get(
   "/admin/products",
