@@ -9,7 +9,7 @@ const {
   adminProducts,
 } = require("../controllers/product.js");
 const { authenticationMid, roleCehcked } = require("../middleware/auth.js");
-s
+
 const router = express.Router();
 router.get("/products", allProducts);
 router.get(
